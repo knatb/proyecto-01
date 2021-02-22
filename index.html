@@ -5,15 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css"/>
     <!--SLIDER-->    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!--MOMENT-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-mx.js" integrity="sha512-kjJp4EacHMqMqrEGt7qGW0m8Ui8XH4wMJWghWhw8u2vvgUKvuSUopJwiHJ2n7xZCDORz+grK4GUx2evl9CfqFQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-mx.min.js" integrity="sha512-Qy4cmZ6v7vnVEc0cn/BIj9q15eB98do4hMvu8xtc/H+v+YYpdpDrB35flHS3NPLbZUpe1npSYY/u+Gi3UB61vw==" crossorigin="anonymous"></script>
     <!--SCRIPT-->>
     <script type="text/javascript" src="js/main.js"></script>
     <title>Document</title>
 </head>
 <body>
+
+    <div id="change-theme">
+        <div class='toGreen'></div>
+        <div class='toRed'></div>
+        <div class='toBlue'></div>
+    </div>
+
     <section id='global'>
         <!--CABECERA-->
         <header>
@@ -44,12 +56,7 @@
         <!--CONTENIDO-->
         <div id='content'>
             <div id='posts'>
-                <article class="post">
-                    <h2>TITULO</h2>
-                    <span class="date">fecha de publicacion</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur obcaecati odit facere odio dignissimos ab fuga dicta. Quod inventore tempore amet reprehenderit provident et esse fugit dicta ipsum magnam?</p>
-                    <a href="#" class="button-more">Leer más</a>
-                </article>
+               <!--CARGADOS DESDE JSON-->
             </div>
             <aside id="sidebar">
                 <div id=about>
@@ -80,6 +87,7 @@
     </section>
     <footer>
         Kenneth Artaban López López
+        <a class='subir' href="#">Ir a Inicio</a>
     </footer>
 </body>
 </html>
